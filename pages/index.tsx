@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import Card from "../components/common/card"
+import Button from "../components/common/button"
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -110,7 +111,10 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+         <Card title="Sample Property" />
+        <Button label="Book Now" onClick={() => alert('Button clicked!')} />
       </footer>
     </div>
   );
 }
+
