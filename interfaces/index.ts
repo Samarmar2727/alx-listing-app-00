@@ -1,14 +1,37 @@
-// interfaces/index.ts
+
 
 export interface CardProps {
-  // Add more props later
-  title: string;
-  imageUrl: string;
+  image: string;
+  name: string;
   price: number;
+  rating: number;
 }
 
 export interface ButtonProps {
   // Add more props later
   label: string;
   onClick: () => void;
+} 
+
+export interface PropertyProps {
+  name: string;
+  address: {
+    state: string;
+    city: string;
+    country: string;
+  };
+  rating: number;
+  category: string[];
+  price: number;
+  offers: {
+    bed: string;
+    shower: string;
+    occupants: string;
+  };
+  image: string;
+  discount: string;
+}
+
+ export interface PillProps {
+  label: string;
 }
